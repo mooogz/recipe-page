@@ -1,0 +1,138 @@
+:root {
+/*Primary*/
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+/*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--eggshell);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--wengeBrown);
+  }
+
+  main {
+    background-color: var(--white);
+    width: 40%;
+    align-self: center;
+    margin: 5rem 0;
+    border-radius: 15px;
+  }
+
+  h1, h2, h4 {
+    font-family: 'Young Serif', sans-serif;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .image-container {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .text-container {
+    margin: 0 2rem;
+  }
+
+  .prep {
+    background-color: var(--roseWhite);
+    padding: .5rem 1rem;
+    border-radius: 15px;
+  }
+
+  h3 {
+    color: var(--darkRaspberry);
+    font-size: 1rem;
+    padding: 0 0 0 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--darkCharcoal);
+  }
+
+  h2, li::marker {
+    color: var(--nutmeg);
+    font-weight: 700;
+  }
+
+  span {
+   font-weight: 700;
+  }
+
+  .prep li {
+    padding: 0 1rem;
+    line-height: 2;
+  }
+
+  p {
+    font-size: .875rem;
+  }
+
+  .ingredients li, .instructions li {
+    padding: 0 1rem;
+    line-height: 2;
+  }
+
+.light {
+  font-weight: 400;
+}
+
+.calories-container, .carbs-container, .protein-container, .fat-container {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.nutrition .light {
+  width: 65%;
+}
+
+.number {
+  color: var(--darkRaspberry);
+}
+
+hr {
+  border-top: 2px var(--lightGrey);
+}
+
+.nutrition {
+  padding: 0 0 2rem 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    width: 33%;
+  }
+}
